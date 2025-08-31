@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <img src="perfil.jpg" alt="Foto de perfil" class="perfil">
+        <img id="perfil" alt="Profile photo" class="perfil">
         <h1>Hello, I'm Cristina Arroyo</h1>
         <p>Software Engineer | Data Engineer | AI Specialist | Architect</p>
     </header>
@@ -72,5 +72,18 @@
     <footer>
         <p>© 2025 Cristina Arroyo</p>
     </footer>
+
+     <script>
+      fetch('perfil.txt')
+      .then(response => {
+          if (!response.ok) throw new Error('Archivo no encontrado');
+          return response.text();
+      })
+      .then(base64 => {
+          document.getElementById('perfil').src = 'data:image/jpeg;base64,' + base64;
+      })
+      .catch(err => console.error('Error cargando la imagen:', err));
+    </script>
 </body>
+
 </html>
