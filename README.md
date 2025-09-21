@@ -1,5 +1,7 @@
 # 🌐 Personal Website
 
+👉 Live site: [https://jcrisarh.github.io/my-public-page/](https://jcrisarh.github.io/my-public-page/)
+
 This repository contains the source code for my personal website, built with **GitHub Pages**.  
 The site serves as a portfolio, blog, and central hub to showcase my work, projects, and interests.
 
