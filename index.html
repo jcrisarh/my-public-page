@@ -1,89 +1,373 @@
+
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cristina Arroyo - Personal Website</title>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&family=Raleway:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+
+    <meta name="description" content="Cristina Arroyo — Chemical Engineer, AI Specialist and Data Engineer interested in computational methods, simulations and data-driven problem solving.">
+
+    <title>Cristina Arroyo | Engineering, Data & AI</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <header>
-        <img id="perfil" alt="Profile photo" class="perfil">
-        <h1>Hello, I'm Cristina Arroyo</h1>
-        <p>Software Engineer | Data Engineer | AI Specialist | Architect</p>
+
+    <header class="site-header">
+        <nav class="nav container" aria-label="Main navigation">
+            <a class="brand" href="#home" aria-label="Cristina Arroyo home">Cristina Arroyo H.</a>
+
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#expertise">Expertise</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
     </header>
 
-    <section id="about">
-        <p style="text-align: justify;">
-        I am a Software Engineer and Data Engineer with hands-on experience in 
-        data platforms, artificial intelligence, and advanced numerical simulations 
-        for engineering. Throughout my career, I have contributed to projects involving 
-        real-time data processing, natural language processing, and optimization techniques.
-    </p>
-    <p style="text-align: justify;">
-        I thrive in dynamic environments where adaptability, problem-solving, 
-        and continuous learning are essential. Beyond the technical side, I enjoy mentoring 
-        others and collaborating with multicultural and international teams to deliver 
-        impactful and scalable solutions.
-    </p>
-    </section>
+    <main>
+        <section class="hero container" id="home">
 
-   <section id="learning">
-  <h2>Learning</h2>
-  <ul>
-    <li>
-      Natural Language Processing (NLP) repository with my coursework, experiments, and projects — written in Spanish. 
-      <a href="https://github.com/jcrisarh/PLN" target="_blank">View Repository</a>
-    </li>
-    <li>
-      IoT Air Quality Monitoring with ESP32 — written in Spanish.
-      <a href="https://github.com/jcrisarh/embedDAIoT" target="_blank">View Repository</a>
-    </li>
-     <li>
-      Image Analysis and Segmentation — written in Spanish.
-      <a href="https://github.com/jcrisarh/vision1tp1" target="_blank">View Repository</a>
-    </li>
-    <li>
-      Gaussian Filtering in the Spatial and Frequency Domain — written in Spanish.
-      <a href="https://github.com/jcrisarh/vision1tp2" target="_blank">View Repository</a>
-    </li>
-      <li>
-      Soft drink logo detection — written in Spanish.
-      <a href="https://github.com/jcrisarh/vision1tp3" target="_blank">View Repository</a>
-    </li>
-    <li>
-      Front-end application designed for an automated irrigation system — written in Spanish.
-      <a href="https://github.com/jcrisarh/DAM_devices" target="_blank">View Repository</a>
-    </li>
-  </ul>
-</section>
+            <div class="hero-content">
+                <p class="eyebrow">ENGINEERING · DATA · ARTIFICIAL INTELLIGENCE</p>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <ul>
-            <li><a href="https://github.com/jcrisarh" target="_blank">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/cristina-arroyo-huerta-641338ba/">LinkedIn</a></li>
-            <li><a href="mailto:jcrisarh@gmail.com">Email</a></li>
-        </ul>
-    </section>
+                <h1>Turning complex problems into meaningful solutions.</h1>
 
-    <footer>
-        <p>© 2025 Cristina Arroyo</p>
+                <p class="hero-description">
+                    I'm Cristina Arroyo, a Chemical Engineer, AI Specialist,
+                    and Data Engineer. My work brings together engineering
+                    principles, computational methods, and data-driven
+                    problem solving.
+                </p>
+
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#projects">
+                        Explore my work
+                    </a>
+                    <a class="button button-secondary" href="#contact">
+                        Get in touch
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-photo-wrap">
+                <div class="photo-frame">
+                    <img
+                        id="perfil"
+                        class="profile-photo"
+                        alt="Portrait of Cristina Arroyo"
+                    >
+                </div>
+                <p class="photo-caption">
+                    Engineering mindset. Curiosity across disciplines.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="focus-strip">
+            <div class="container focus-grid">
+                <div class="focus-item">
+                    <span class="focus-number">01</span>
+                    <div>
+                        <h3>Engineering & Simulation</h3>
+                        <p>Modeling systems and understanding processes.</p>
+                    </div>
+                </div>
+
+                <div class="focus-item">
+                    <span class="focus-number">02</span>
+                    <div>
+                        <h3>Data Engineering</h3>
+                        <p>Building pipelines, models, and analytical tools.</p>
+                    </div>
+                </div>
+
+                <div class="focus-item">
+                    <span class="focus-number">03</span>
+                    <div>
+                        <h3>AI & Computational Methods</h3>
+                        <p>Applying algorithms to practical problems.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container" id="about">
+            <div class="section-heading">
+                <p class="eyebrow">BACKGROUND</p>
+                <h2>Different disciplines. One analytical approach.</h2>
+            </div>
+
+            <div class="about-grid">
+                <div>
+                    <p class="lead">
+                        My background combines chemical engineering,
+                        artificial intelligence, and data engineering.
+                    </p>
+
+                    <p>
+                        I started with engineering problems involving
+                        physical processes, experimental data, and
+                        mathematical models. Over time, I expanded into
+                        software, data platforms, and AI applications.
+                    </p>
+
+                    <p>
+                        Across these fields, I enjoy understanding how
+                        systems work, making complex information useful,
+                        and building practical solutions grounded in
+                        technical reasoning.
+                    </p>
+
+                    <p>
+                        My academic work has also included process
+                        assessment and environmental data collection,
+                        connecting engineering analysis with real-world
+                        applications.
+                    </p>
+                </div>
+
+                <aside class="principles-card">
+                    <p class="eyebrow">HOW I APPROACH PROBLEMS</p>
+
+                    <ul class="principles-list">
+                        <li>
+                            <span class="list-marker">01</span>
+                            <div>
+                                <strong>Understand the system</strong>
+                                <p>Start with the problem, assumptions, and constraints.</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <span class="list-marker">02</span>
+                            <div>
+                                <strong>Analyze the evidence</strong>
+                                <p>Use data, models, and computational tools.</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <span class="list-marker">03</span>
+                            <div>
+                                <strong>Build with purpose</strong>
+                                <p>Turn findings into useful, maintainable solutions.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <section class="section expertise-section" id="expertise">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">EXPERTISE</p>
+                    <h2>A multidisciplinary technical toolkit.</h2>
+                    <p class="section-intro">
+                        Combining analytical foundations with hands-on
+                        experience in data systems and software.
+                    </p>
+                </div>
+
+                <div class="expertise-grid">
+                    <article class="expertise-card">
+                        <span class="card-index">01 / ENGINEERING</span>
+                        <h3>Modeling & Simulation</h3>
+                        <p>
+                            Chemical engineering, numerical methods,
+                            process analysis, and mathematical modeling.
+                        </p>
+                    </article>
+
+                    <article class="expertise-card">
+                        <span class="card-index">02 / DATA</span>
+                        <h3>Data Engineering</h3>
+                        <p>
+                            SQL, Python, data pipelines, transformations,
+                            analytical models, and dashboards.
+                        </p>
+                    </article>
+
+                    <article class="expertise-card">
+                        <span class="card-index">03 / COMPUTING</span>
+                        <h3>AI & Algorithms</h3>
+                        <p>
+                            Natural language processing, image analysis,
+                            optimization, and AI-enabled applications.
+                        </p>
+                    </article>
+
+                    <article class="expertise-card">
+                        <span class="card-index">04 / APPLICATIONS</span>
+                        <h3>Applied Research</h3>
+                        <p>
+                            Using computational and data-driven approaches
+                            to explore problems across different domains.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container" id="projects">
+            <div class="section-heading">
+                <p class="eyebrow">SELECTED WORK</p>
+                <h2>Projects & technical explorations.</h2>
+                <p class="section-intro">
+                    A selection of academic and personal projects exploring
+                    engineering, data, algorithms, and connected systems.
+                </p>
+            </div>
+
+            <div class="projects-grid">
+
+                <article class="project-card">
+                    <div class="project-topline">
+                        <span class="project-category">01 / IOT</span>
+                        <span class="project-type">Hardware & Data</span>
+                    </div>
+                    <h3>IoT Air Quality Monitoring</h3>
+                    <p>
+                        An academic project exploring air-quality monitoring
+                        with an ESP32-based system and connected devices.
+                    </p>
+                    <a href="https://github.com/jcrisarh/embedDAIoT"
+                       target="_blank" rel="noopener noreferrer"
+                       class="project-link">
+                        View project <span aria-hidden="true">↗</span>
+                    </a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-topline">
+                        <span class="project-category">02 / SIMULATION</span>
+                        <span class="project-type">Chemical Engineering</span>
+                    </div>
+                    <h3>Chemical Reaction Simulation</h3>
+                    <p>
+                        A Python-based exploration of reaction kinetics
+                        and numerical simulation using the explicit
+                        Euler method.
+                    </p>
+                    <a href="https://github.com/jcrisarh/reaccion_sintesis"
+                       target="_blank" rel="noopener noreferrer"
+                       class="project-link">
+                        View project <span aria-hidden="true">↗</span>
+                    </a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-topline">
+                        <span class="project-category">03 / COMPUTER VISION</span>
+                        <span class="project-type">Image Processing</span>
+                    </div>
+                    <h3>Image Analysis & Segmentation</h3>
+                    <p>
+                        An exploration of image processing techniques
+                        and segmentation as part of computer vision
+                        coursework.
+                    </p>
+                    <a href="https://github.com/jcrisarh/vision1tp1"
+                       target="_blank" rel="noopener noreferrer"
+                       class="project-link">
+                        View project <span aria-hidden="true">↗</span>
+                    </a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-topline">
+                        <span class="project-category">04 / APPLICATION</span>
+                        <span class="project-type">Automation</span>
+                    </div>
+                    <h3>Automated Irrigation Interface</h3>
+                    <p>
+                        A front-end project exploring an interface
+                        for an automated irrigation system.
+                    </p>
+                    <a href="https://github.com/jcrisarh/DAM_devices"
+                       target="_blank" rel="noopener noreferrer"
+                       class="project-link">
+                        View project <span aria-hidden="true">↗</span>
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="interests-section">
+            <div class="container interests-content">
+                <p class="eyebrow">CURRENT INTERESTS</p>
+                <h2>Exploring the intersection of data, engineering, and the physical world.</h2>
+                <p>
+                    I'm interested in how numerical modeling, connected
+                    systems, and data-driven analysis can help us better
+                    understand complex real-world processes.
+                </p>
+            </div>
+        </section>
+
+        <section class="section container contact-section" id="contact">
+            <div>
+                <p class="eyebrow">CONTACT</p>
+                <h2>Let's connect.</h2>
+                <p>
+                    Interested in engineering, data, applied research,
+                    or interdisciplinary projects? Feel free to reach out.
+                </p>
+            </div>
+
+            <div class="contact-links">
+                <a href="mailto:jcrisarh@gmail.com">Email <span>↗</span></a>
+                <a href="https://github.com/jcrisarh"
+                   target="_blank" rel="noopener noreferrer">
+                    GitHub <span>↗</span>
+                </a>
+                <a href="https://www.linkedin.com/in/cristina-arroyo-huerta-641338ba/"
+                   target="_blank" rel="noopener noreferrer">
+                    LinkedIn <span>↗</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <span>Cristina Arroyo H.</span>
+            <span>© 2026</span>
+        </div>
     </footer>
 
-     <script>
-      fetch('perfil.txt')
-      .then(response => {
-          if (!response.ok) throw new Error('Archivo no encontrado');
-          return response.text();
-      })
-      .then(base64 => {
-          document.getElementById('perfil').src = 'data:image/jpeg;base64,' + base64;
-      })
-      .catch(err => console.error('Error cargando la imagen:', err));
-    </script>
-</body>
+    <script>
+        // Load the existing base64-encoded portrait from perfil.txt.
+        fetch('./perfil.txt')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Could not load perfil.txt');
+                }
+                return response.text();
+            })
+            .then(text => {
+                const imageData = text.trim();
+                const profileImage = document.getElementById('perfil');
 
+                if (imageData) {
+                    profileImage.src = imageData.startsWith('data:image/')
+                        ? imageData
+                        : 'data:image/jpeg;base64,' + imageData;
+                }
+            })
+            .catch(error => {
+                console.error('Profile photo could not be loaded:', error);
+            });
+    </script>
+
+</body>
 </html>
