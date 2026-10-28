@@ -621,6 +621,106 @@ h3 {
     }
 
     .project-type {
-        text-align: left;
+        text-align: justify;
     }
+
+/* Profile photo: circular and refined */
+.photo-frame {
+    width: 250px;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid var(--line);
+    background: var(--surface);
+}
+
+.profile-photo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 35%;
+    border-radius: 50%;
+}
+
+/* Give the portrait a little more breathing room */
+.hero-photo-wrap {
+    width: 250px;
+    max-width: 100%;
+    justify-self: end;
+}
+
+/* Justified text in the Background section */
+#about .about-grid > div > p {
+    text-align: justify;
+    hyphens: auto;
+    text-justify: inter-word;
+}
+
+/* Keep the introductory sentence readable */
+#about .about-grid > div > .lead {
+    text-align: justify;
+}
+
+/* Justify other longer descriptive paragraphs */
+#expertise .section-intro,
+#projects .section-intro,
+.contact-section > div:first-child > p:last-child {
+    text-align: justify;
+    hyphens: auto;
+}
+
+/* Smaller circular portrait on mobile */
+@media (max-width: 760px) {
+    .hero-photo-wrap {
+        width: 210px;
+        justify-self: center;
+    }
+
+    .photo-frame {
+        width: 210px;
+    }
+}
+
+
+
+/* Background: improve paragraph justification */
+#about .about-grid {
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+    gap: 64px;
+}
+
+#about .about-grid > div > p {
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+    overflow-wrap: normal;
+    word-spacing: normal;
+    letter-spacing: normal;
+    line-height: 1.85;
+}
+
+#about .about-grid > div > p.lead {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+@media (max-width: 760px) {
+    #about .about-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 36px;
+    }
+}
+
+#about .class-grid p {
+    text-align: justify;
+    hyphens: auto;
+}
+
+#about .lead {
+    text-align: justify;
+}
+
+
 }
